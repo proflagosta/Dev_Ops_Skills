@@ -1,0 +1,1 @@
+These PowerShell and Bash scripts create two user accounts with initial permisions and then change them.

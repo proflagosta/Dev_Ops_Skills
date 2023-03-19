@@ -1,0 +1,14 @@
+The script can be used to monitor the performance of a Windows/Linux server and troubleshoot any issues that may arise. The script can be customized by adjusting the thresholds for each monitored metric.
+
+Usage
+- Open PowerShell/Bash on the machine from which you want to monitor the server.
+- Navigate to the directory containing the script.
+- Open the script in PowerShell/Bash and modify the $ComputerName variable to specify the name of the server you want to monitor.
+- Run the script by executing the .\ServerMonitoring.ps1 command.
+
+Metrics Monitored
+- The following metrics are monitored by the script:
+	CPU usage - The script checks the average CPU load percentage and alerts if it exceeds a specified threshold.
+	Memory usage - The script calculates the percentage of used memory and alerts if it exceeds a specified threshold.
+	Disk usage - The script calculates the percentage of used disk space for each drive and alerts if it exceeds a specified threshold.
+	Network latency - The script pings the server and alerts if the response time exceeds a specified threshold.
