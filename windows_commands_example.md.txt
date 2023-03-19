@@ -1,0 +1,20 @@
+
+**Windows Task Example:**
+
+```markdown
+# Create Backup and Transfer to Remote Server
+
+## Task
+Create a Windows-based remote server on Azure, then create a backup of a folder, compress it, and upload it to the remote server using WinSCP.
+
+## Steps
+
+1. **Create a Windows-based remote server on Azure:**
+
+   Create an Azure VM with Windows Server.
+
+2. **Create a ZIP archive of the target folder using the `Compress-Archive` cmdlet:**
+
+   ```powershell
+   Set-Location -Path "C:\path\to\parent\directory"
+   Compress-Archive -Path "target_folder" -DestinationPath "backup_folder.zip"
