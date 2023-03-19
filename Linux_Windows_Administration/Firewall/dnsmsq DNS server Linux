@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# Install dnsmasq
+sudo apt-get update
+sudo apt-get install -y dnsmasq
+
+# Configure dnsmasq to use Google's public DNS servers
+echo "server=8.8.8.8" | sudo tee -a /etc/dnsmasq.conf
+echo "server=8.8.4.4" | sudo tee -a /etc/dnsmasq.conf
+
+# Restart dnsmasq to apply the changes
+sudo systemctl restart dnsmasq
+
+#git add setup_dnsmasq.sh
+#git commit -m "Add script to set up a DNS server with dnsmasq on Linux"
+#git push origin main
+

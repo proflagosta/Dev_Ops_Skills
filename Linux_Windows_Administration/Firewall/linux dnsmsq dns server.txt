@@ -1,0 +1,1 @@
+This example shows how to set up a simple DNS server using dnsmasq on a Linux system. The script installs dnsmasq and configures it to use Google's public DNS servers for upstream resolution.

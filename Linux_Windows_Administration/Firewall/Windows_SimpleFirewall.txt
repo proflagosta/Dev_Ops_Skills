@@ -1,0 +1,3 @@
+**Windows:**
+
+This example shows how to set up a basic firewall using PowerShell. The script allows incoming SSH (port 22) and HTTP (port 80) traffic and blocks all other incoming connections.
